@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F02A0062B90A6A300F23F1A /* samplePodSimplePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F02A0052B90A6A300F23F1A /* samplePodSimplePrint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F02A00D2B90A6B300F23F1A /* SampleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02A00C2B90A6B300F23F1A /* SampleClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F02A0022B90A6A300F23F1A /* samplePodSimplePrint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = samplePodSimplePrint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F02A0052B90A6A300F23F1A /* samplePodSimplePrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = samplePodSimplePrint.h; sourceTree = "<group>"; };
+		9F02A00C2B90A6B300F23F1A /* SampleClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 		9F02A0042B90A6A300F23F1A /* samplePodSimplePrint */ = {
 			isa = PBXGroup;
 			children = (
-				9F02A0052B90A6A300F23F1A /* samplePodSimplePrint.h */,
+				9F02A00C2B90A6B300F23F1A /* SampleClass.swift */,
 			);
 			path = samplePodSimplePrint;
 			sourceTree = "<group>";
@@ -57,7 +57,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F02A0062B90A6A300F23F1A /* samplePodSimplePrint.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +92,7 @@
 				TargetAttributes = {
 					9F02A0012B90A6A300F23F1A = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -129,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F02A00D2B90A6B300F23F1A /* SampleClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +264,7 @@
 		9F02A00A2B90A6A300F23F1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -285,6 +287,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,6 +296,7 @@
 		9F02A00B2B90A6A300F23F1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
